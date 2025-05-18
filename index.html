@@ -23,8 +23,6 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 
-
-
 	<style>
 		/*======================================
 //--//-->   ABOUT
@@ -43,9 +41,7 @@
 			margin-left: 10px;
 		}
 
-
 		.skill-mf .progress {
-			/* background-color: #cde1f8; */
 			margin: .5rem 0 1.2rem 0;
 			border-radius: 0;
 			height: .7rem;
@@ -55,7 +51,6 @@
 			height: .7rem;
 			background-color: #ffbd39;
 		}
-
 
 		/* Animation styles */
 		#typing-animation {
@@ -70,7 +65,6 @@
 
 		#typing-animation:before {
 			content: "";
-			/* position: absolute; */
 			top: 0;
 			left: 0;
 			width: 0;
@@ -83,7 +77,6 @@
 			from {
 				width: 0;
 			}
-
 			to {
 				width: 100%;
 			}
@@ -93,15 +86,12 @@
 			from {
 				width: 5px;
 			}
-
 			to {
 				width: 0;
 			}
 		}
 
-
 		/* project image zoom effect */
-
 		.zoom-effect {
 			overflow: hidden;
 			transition: transform 0.3s ease-out;
@@ -111,12 +101,9 @@
 			transform: scale(1.1);
 		}
 	</style>
-
-
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
@@ -138,63 +125,49 @@
 		</div>
 	</nav>
 	<section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
+		<div class="home-slider owl-carousel">
 			<div class="slider-item ">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
 						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/bg-1.png);">
+							style="background-image:url(images/bg.png);">
 							<div class="overlay"></div>
 						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
+						<div class="one-forth d-flex align-items-center ftco-animate"
 							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">Hello!</span>
 								<h1 class="mb-4 mt-3">I'm <span>Anurag Dutta</span></h1>
 
-								<!-- Element to contain animated typing -->
 								<span id="typing-animation"></span>
 
 								<script>
-
-									// Initialize the typing animation
 									const typingAnimationElement = document.getElementById('typing-animation');
-
-									// Create an array of typing text
 									const typingTexts = [
-										'MERN  ',
-										'iOS  ',
+										'MERN Stack',
+										'iOS Developer  ',
 										'Machine Learning   ',
+										'Web Designer   '
 									];
-
-									// Create a function to display the typing animation for a given text
 									function playTypingAnimation(text) {
-										// Loop through each character and add it to the element
 										for (let i = 0; i < text.length; i++) {
 											setTimeout(() => {
 												typingAnimationElement.textContent += text[i];
-											}, i * 200); // Increase the delay to slow down the typing animation
+											}, i * 200);
 										}
-
-										// Once the animation is complete, reset the text and start over
 										setTimeout(() => {
 											typingAnimationElement.textContent = '';
 											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
 										}, text.length * 200);
 									}
-
-									// Start the typing animation loop
 									playTypingAnimation(typingTexts[0]);
-
 								</script>
 
 								<br>
 								<br>
 								<h2>Developer x Designer</h2>
-								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-								<!-- <br> -->
 								<p><a href="https://www.linkedin.com/in/anurag-dutta-491643256"
 										class="btn btn-primary py-3 px-4">Linkedin</a>
 									<a href="https://github.com/Anurag12kaari"
@@ -208,28 +181,23 @@
 		</div>
 	</section>
 
-
-
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
-					<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 										<div class="about-img">
-											<img src="images/about-me.jpg" class="img-fluid rounded b-shadow-a" alt="">
+											<img src="images/anurag.jpg" class="img-fluid rounded b-shadow-a" alt="">
 										</div>
 									</div>
-									<!-- Details next to profile image -->
 									<div class="col-sm-6 col-md-7">
 										<div class="about-info">
 											<p><span class="title-s">Name: </span> <span>Anurag Dutta</span></p>
-											<p><span class="title-s">Job Role: </span> <span>Software Developer</span>
-											</p>
+											<p><span class="title-s">Job Role: </span> <span>Software Developer</span></p>
 											<p><span class="title-s">Experience: </span> <span>2 years</span></p>
 											<p><span class="title-s">Address: </span> <span>Chennai, India</span></p>
 										</div>
@@ -243,25 +211,21 @@
 										<div class="progress-bar" role="progressbar" style="width: 95%;"
 											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-
 									<span>PYTHON</span> <span class="pull-right">85%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 85%"
 											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-
 									<span>SQL</span> <span class="pull-right">90%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 90%"
 											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-
 									<span>iOS Development</span> <span class="pull-right">85%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 85%"
 											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-
 									<span>Machine Learning</span> <span class="pull-right">80%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 80%"
@@ -271,33 +235,26 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
-
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
-
 								<p>Proactive web developer and software engineer skilled in React.js, Node.js, and iOS
-									Development, with a
-									passion for creating innovative, user-friendly websites and mobile applications.
-									Driven to deliver high-quality
-									solutions and contribute to impactful IT projects through technical expertise and
-									creative problem-solving.
-								</p>
+									Development, with a passion for creating innovative, user-friendly websites and mobile
+									applications. Driven to deliver high-quality solutions and contribute to impactful IT
+									projects through technical expertise and creative problem-solving.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span>MERN stack | iOS Developer | ML
-											Developer | Problem Solver </span></li>
+											Developer | Problem Solver</span></li>
 									<li class="d-flex"><span>Domain:</span> <span>Web Development | Mobile Application
-											Development | Machine Learning </span></li>
+											Development | Machine Learning</span></li>
 									<li class="d-flex"><span>Education:</span> <span>B Tech in CSE</span></li>
 									<li class="d-flex"><span>Language:</span> <span>Bengali, English, Hindi</span></li>
 									<li class="d-flex"><span>Technologies:</span> <span>React Js, Next Js, Jupyter
 											Notebook, Node Js, Express Js, SwiftUI, Github, Firebase</span></li>
 									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, Excel, Git</span></li>
 									<li class="d-flex"><span>Interest:</span> <span>Traveling, Gym, Teaching</span></li>
-
 								</ul>
 							</div>
 						</div>
@@ -305,7 +262,7 @@
 							<div class="text">
 								<p class="mb-4">
 									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
+									<span> Projects completed</span>
 								</p>
 								<p><a href="https://www.linkedin.com/in/anurag-dutta-491643256"
 										class="btn btn-primary py-3 px-3">LinkedIn</a></p>
@@ -317,9 +274,6 @@
 		</div>
 	</section>
 
-
-
-
 	<section class="ftco-section ftco-no-pb" id="resume-section">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
@@ -327,8 +281,7 @@
 					<h1 class="big big-2">Resume</h1>
 					<h2 class="mb-4">Resume</h2>
 					<p>Proactive web developer and software engineer skilled in React.js, Node.js, and iOS Development,
-						with a
-						passion for creating innovative, user-friendly websites and mobile applications</p>
+						with a passion for creating innovative, user-friendly websites and mobile applications</p>
 				</div>
 			</div>
 			<div class="row">
@@ -336,87 +289,84 @@
 				<div class="underline"></div>
 			</div>
 			<br>
-
 			<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2024 Aug - Present</span>
+						<span class="date">2025 Apr - 2025 May</span>
+						<h2>iOS Developer Intern</h2>
+						<span class="position">Infosys, Mysore</span>
+						<ul>
+							<li>Developed a fully functional Hospital Management System app, CareHub, using Firebase and SwiftUI.</li>
+							<li>Integrated AVFoundation for accessibility features, supporting visually challenged users.</li>
+							<li>Implemented font size increase functionality to enhance app accessibility.</li>
+						</ul>
+					</div>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024 Aug - 2025 April</span>
 						<h2>iOS Developer</h2>
 						<span class="position">iOS Development Center SRMIST</span>
 						<ul>
-							<li>Designed and developed dynamic iOS applications using Swift, UIKit, and SwiftUI.</li>
-
-							<li> Focused on creating seamless user experiences and implementing efficient app
-								architecture.</li>
-
-							<li> Worked on real-time data synchronization using Firebase, enhancing app performance.
-							</li>
+							<li>Designed and developed PathPulse, a dynamic iOS app using Swift, UIKit, and SwiftUI, integrating OpenWeather and News APIs for real-time updates.</li>
+							<li>Built apps selected for App Fair, showcasing innovative design and seamless user experiences with efficient app architecture.</li>
+							<li>Published apps on the App Store, leveraging Firebase for real-time data synchronization to enhance performance.</li>
 						</ul>
-						</p>
 					</div>
-
 				</div>
-
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2018-2021</span>
+						<span class="date">2024 March - 2024 October</span>
 						<h2>React Developer</h2>
-						<span class="position">E Yantra SRMIST </span>
+						<span class="position">E Yantra SRMIST</span>
 						<ul>
-							<li>Developed an interactive and user-friendly website using React.js and integrated modern
-								UI features.</li>
-
-							<li> Collaborated with the team to align the design with the organization’s branding and
-								goals.</li>
-
-							<li> Achieved 95% user satisfaction in usability testing through responsive design and
-								optimized navigation.</li>
+							<li>Developed an interactive and user-friendly website using React.js and integrated modern UI features.</li>
+							<li>Collaborated with the team to align the design with the organization’s branding and goals.</li>
+							<li>Achieved 95% user satisfaction in usability testing through responsive design and optimized navigation.</li>
 						</ul>
-						</p>
 					</div>
-
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023 Dec - 2024 Mar</span>
+						<h2>Web Developer Intern</h2>
+						<span class="position">Baoiam Innovation Pvt Ltd</span>
+						<ul>
+							<li>Created a fully dynamic company education website using React.js.</li>
+							<li>Designed and implemented modern, responsive UI components to enhance user engagement.</li>
+							<li>Collaborated with the team to ensure the website aligned with business objectives.</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-
 			<br>
 			<br>
-
 			<div class="row">
 				<h1 class="big-4">Education</h1>
 				<div class="underline"></div>
 			</div>
 			<br>
-
 			<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2022-2026</span>
 						<h2>B Tech CSE</h2>
 						<span class="position">SRM University</span>
-						<p class="mt-4">CGPA : 8.8</p>
+						<p class="mt-4">CGPA: 8.8</p>
 					</div>
 				</div>
-
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2020-2022</span>
 						<h2>Higher Secondary School</h2>
 						<span class="position">RKM Vivekananda Vidyamandir</span>
-						<p class="mt-4">Percentage : 92.8</p>
+						<p class="mt-4">Percentage: 92.8</p>
 					</div>
 				</div>
 			</div>
-
 			<div class="row justify-content-center mt-5">
 				<div class="col-md-6 text-center ftco-animate">
-					<p><a href="Anurag-Dutta-FlowCV-Resume-20241123.pdf" class="btn btn-primary py-4 px-5">Download
-							CV</a></p>
+					<p><a href="Anurag-Dutta-FlowCV.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
 				</div>
 			</div>
 		</div>
 	</section>
-
-
 
 	<section class="ftco-section" id="project-section">
 		<div class="container">
@@ -424,7 +374,7 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Projects</h1>
 					<h2 class="mb-4">Projects</h2>
-					<p>Below are the sample projects on MERN Stack & iOS Development </p>
+					<p>Below are the sample projects on MERN Stack & iOS Development</p>
 				</div>
 			</div>
 			<div class="row d-flex">
@@ -434,12 +384,9 @@
 							style="background-image: url('images/proj-1.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
-
 							<h3 class="heading"><a
-									href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">iFlix
-									</a></h3>
-							<p>Created a fullstack iOS App using UIkit people can see movie and see review of that movie
-							</p>
+									href="https://github.com/Anurag12kaari/iOSFlix">iFlix</a></h3>
+							<p>Created a fullstack iOS App using UIkit people can see movie and see review of that movie</p>
 						</div>
 					</div>
 				</div>
@@ -449,11 +396,10 @@
 							style="background-image: url('images/proj-2.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
-
-							<h3 class="heading"><a href="https://github.com/AshishShiv101/PathPulse">PathPulse </a></h3>
+							<h3 class="heading"><a href="https://apps.apple.com/in/app/pathpulse/id6743316371">PathPulse</a></h3>
 							<p>iOS map app that gives you weather and news update of destination place and see news of
 								middle route using openweather API and news by newsapi and see nearby places of your
-								current location by using Google Places API </p>
+								current location by using Google Places API</p>
 						</div>
 					</div>
 				</div>
@@ -463,16 +409,14 @@
 							style="background-image: url('images/proj-3.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
-
 							<h3 class="heading"><a href="https://github.com/Anurag12kaari/instaclone">Instaclan</a></h3>
 							<p>Instaclan social app using express for EJS for Frontend and MongoDB for Database features
-								like post image reel follow like any image </p>
+								like post image reel follow like any image</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<br>
-			<!-- added justify-content-center to center align the last two projects -->
 			<div class="row d-flex justify-content-center">
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
@@ -480,25 +424,20 @@
 							style="background-image: url('images/proj-4.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
-
 							<h3 class="heading"><a href="https://github.com/DewashishDubey/E-Yantra">E-Yantra</a></h3>
-							<p>E-Yantra is an inhouse project of SRMIST a website using React JS for College Students.
-							</p>
+							<p>E-Yantra is an inhouse project of SRMIST a website using React JS for College Students.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
 						<a href="https://github.com/Anurag12kaari/Code-Editor" class="block-20 zoom-effect"
-							style="background-image: url('images/code.jpg');">
+							style="background-image: url('images/image.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
-
-							<h3 class="heading"><a href="https://github.com/Anurag12kaari/Code-Editor">CodeSync
-								</a></h3>
+							<h3 class="heading"><a href="https://github.com/Anurag12kaari/Code-Editor">CodeSync</a></h3>
 							<p>Developed a Collaborative Code Editor using Monaco editor for code writting piston API
-								for compilation and socket.io for multiple people collaboration
-							</p>
+								for compilation and socket.io for multiple people collaboration</p>
 						</div>
 					</div>
 				</div>
@@ -525,7 +464,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18">
 						<div class="text">
@@ -536,24 +474,19 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<h2>More projects on<span> Github </span> </h2>
+					<h2>More projects on<span> Github </span></h2>
 					<div class="heading">
-						<h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<h4>I love to solve business problems & uncover hidden data stories</h4>
 						<br>
 						<p><a href="https://github.com/Anurag12kaari" class="btn btn-primary py-3 px-5">GitHub</a></p>
 					</div>
 				</div>
 			</div>
-			<!-- </div> -->
 		</div>
 	</section>
-
-
 
 	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
 		<div class="container">
@@ -564,7 +497,6 @@
 					<p>Below are the details to reach out to me!</p>
 				</div>
 			</div>
-
 			<div class="row d-flex contact-info mb-5">
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
@@ -599,23 +531,18 @@
 							<span class="icon-globe"></span>
 						</div>
 						<h3 class="mb-4">Download Resume</h3>
-						<p><a href="Anurag-Dutta-FlowCV-Resume-20241123.pdf">resumelink</a></p>
+						<p><a href="Anurag-Dutta-FlowCV.pdf">resumelink</a></p>
 					</div>
 				</div>
-
 				<div class="container">
 					<br>
 					<br>
-					<div class="row justify-content-center">
-
-					</div>
+					<div class="row justify-content-center"></div>
 					<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 						<li class="ftco-animate normal-txt">Find me on </li>
-						<!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
 						<li class="ftco-animate"><a href="https://www.linkedin.com/in/anurag-dutta-491643256/"><span
 									class="icon-linkedin"></span></a></li>
-						<!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li> -->
 						<li class="ftco-animate"><a href="https://github.com/Anurag12kaari"><span
 									class="icon-github"></span></a></li>
 						<li class="ftco-animate"><a href="https://www.instagram.com/_anurag.dutta/"><span
@@ -626,33 +553,24 @@
 			</div>
 	</section>
 
-
-
-
 	<footer class="ftco-footer ftco-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
+					<p>Copyright ©
 						<script>document.write(new Date().getFullYear() + 1);</script> All rights reserved <i
 							class="icon-heart color-danger" aria-hidden="true"></i>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 
-
-	<!-- loader -->
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" />
 		</svg></div>
-
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -666,7 +584,6 @@
 	<script src="js/aos.js"></script>
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-
 	<script src="js/main.js"></script>
 
 </body>
